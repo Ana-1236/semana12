@@ -53,7 +53,217 @@
     </nav>
     <div style="background-color: rgba(238, 237, 236, 0.849); margin: 10px;">
         <div style="margin: 30px;">
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Formularios en HTML:
+                Captura información de tus usuarios de forma efectiva
+            </p>
+
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">Los formularios son elementos esenciales en las
+                páginas web que permiten a los usuarios interactuar con el sitio web y proporcionar información. HTML
+                ofrece diversas etiquetas y atributos para crear formularios completos y funcionales.
+            </p> <br>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Elementos de formulario
+                (input, select, textarea):</p>
+            <ul class=" space-y-1 list-disc list-inside dark:text-gray-400">
+                <li style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                    class="text-left rtl:text-right dark:text-gray-400">input: Este elemento se utiliza para crear
+                    diferentes tipos de campos de entrada, como campos de texto, casillas de verificación, botones de
+                    radio y botones de envío.
+                </li>
+            </ul><br>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Ejemplo</p>
+            <style>
+                .code-box {
+                    border: 1px solid #ccc;
+                    background-color: #252424;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    overflow-x: auto;
+                    color: #000000;
+                }
+
+                .code-box pre {
+                    margin: 0;
+                }
+
+                .code-box code {
+                    color: #14d2f3;
+                }
+            </style>
+            <div class="code-box">
+                <pre><code>&lt;input type="text" name="nombre" placeholder="Ingrese su nombre">
+    &lt;input type="checkbox" name="terminos" value="si"> Acepto los términos y condiciones
+    &lt;input type="radio" name="genero" value="masculino"> Masculino
+    &lt;input type="radio" name="genero" value="femenino"> Femenino
+    &lt;input type="submit" value="Enviar">
+                </code></pre>
+            </div><br>
         </div>
+        <ul class=" space-y-1 list-disc list-inside dark:text-gray-400">
+            <li style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">select: Este elemento se utiliza para crear listas
+                desplegables que permiten a los usuarios seleccionar una opción de una lista.
+            </li>
+        </ul><br>
+        <p style="font-family: 'Times New Roman', Times, serif;"
+            class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Ejemplo</p>
+        <style>
+            .code-box {
+                border: 1px solid #ccc;
+                background-color: #252424;
+                padding: 20px;
+                margin-bottom: 20px;
+                overflow-x: auto;
+                color: #000000;
+            }
+
+            .code-box pre {
+                margin: 0;
+            }
+
+            .code-box code {
+                color: #14d2f3;
+            }
+        </style>
+        <div class="code-box">
+            <pre><code>&lt;select name="pais">
+    &lt;option value="">Seleccione un país&lt;/option>
+    &lt;option value="colombia">Colombia&lt;/option>
+    &lt;option value="mexico">México&lt;/option>
+    &lt;option value="argentina">Argentina&lt;/option>
+&lt;/select>
+              
+    </code></pre>
+        </div><br>
+
+        <ul class=" space-y-1 list-disc list-inside dark:text-gray-400">
+            <li style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">textarea: Este elemento se utiliza para crear áreas
+                de texto que permiten a los usuarios escribir o ingresar información de varias líneas.
+
+            </li>
+        </ul><br>
+        <p style="font-family: 'Times New Roman', Times, serif;"
+            class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Ejemplo</p>
+        <style>
+            .code-box {
+                border: 1px solid #ccc;
+                background-color: #252424;
+                padding: 20px;
+                margin-bottom: 20px;
+                overflow-x: auto;
+                color: #000000;
+            }
+
+            .code-box pre {
+                margin: 0;
+            }
+
+            .code-box code {
+                color: #14d2f3;
+            }
+        </style>
+        <div class="code-box">
+            <pre><code>&lt;textarea name="mensaje" rows="5" cols="30" placeholder="Escriba su mensaje aquí">&lt;/textarea>
+
+    </code></pre>
+        </div><br>
+
+        <p style="font-family: 'Times New Roman', Times, serif;"
+            class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Atributos de formulario (type,
+            name, value):
+        </p>
+        <ul class=" space-y-1 list-disc list-inside dark:text-gray-400">
+            <li style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">type: Este atributo define el tipo de campo de
+                entrada, como text, checkbox, radio, submit, etc.
+            </li>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">name: Este atributo asigna un nombre al campo de
+                entrada, el cual se utiliza para identificar el dato ingresado por el usuario.
+            </li>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">value: Este atributo define el valor inicial del
+                campo de entrada, como el texto predefinido en un campo de texto o la opción seleccionada en una lista
+                desplegable.
+            </li>
+        </ul><br>
+        <p style="font-family: 'Times New Roman', Times, serif;"
+            class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Envío de formularios (action,
+            method):
+        </p>
+        <ul class=" space-y-1 list-disc list-inside dark:text-gray-400">
+            <li style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">action: Este atributo define la URL del script o
+                servidor que procesará los datos enviados a través del formulario.
+            </li>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">method: Este atributo define el método HTTP que se
+                utilizará para enviar los datos del formulario. Los métodos más comunes son GET y POST.
+            </li>
+        </ul><br>
+        <p style="font-family: 'Times New Roman', Times, serif;"
+            class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Ejemplo</p>
+        <style>
+            .code-box {
+                border: 1px solid #ccc;
+                background-color: #252424;
+                padding: 20px;
+                margin-bottom: 20px;
+                overflow-x: auto;
+                color: #000000;
+            }
+
+            .code-box pre {
+                margin: 0;
+            }
+
+            .code-box code {
+                color: #14d2f3;
+            }
+        </style>
+        <div class="code-box">
+            <pre><code>&lt;form action="procesar_formulario.php" method="post">
+    &lt;input type="submit" value="Enviar">
+ &lt;/form></code></pre>
+        </div><br>
+
+        <p style="font-family: 'Times New Roman', Times, serif;"
+        class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Validación de formularios:
+    </p>
+
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+        class="text-left rtl:text-right dark:text-gray-400">La validación de formularios es crucial para garantizar que los usuarios ingresen datos correctos y completos. HTML ofrece algunos atributos básicos de validación, como required, min, max, pattern, etc. Sin embargo, para validaciones más complejas, se recomienda utilizar JavaScript o frameworks front-end como jQuery.
+    </p> <br>
+    <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white"> Recursos adicionales:</h2>
+    <ul class=" space-y-1 list-disc list-inside dark:text-gray-400">
+        <li>
+            <a href="https://www.w3schools.com/html/html_forms.asp"
+                class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Formularios en HTML.</a>
+        </li>
+        <li>
+            <a href="https://www.w3schools.com/html/html_forms.asp"
+                class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Elementos de formulario.</a>
+        </li>
+        <li>
+            <a href="https://www.w3schools.com/html/html_forms_attributes.asp"
+                class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Atributos de formulario.</a>
+        </li>
+        <li>
+            <a href="https://www.w3schools.com/tags/att_form_action.asp"
+                class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Envío de formularios.</a>
+        </li>
+        <li>
+            <a href="https://getbootstrap.com/docs/5.0/forms/overview/"
+                class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Ejemplos de formularios web.</a>
+        </li>
+
+    </ul>
+    </div>
     </div>
 </body>
+
 </html>

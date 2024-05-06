@@ -53,6 +53,211 @@
     </nav>
     <div style="background-color: rgba(238, 237, 236, 0.849); margin: 10px;">
         <div style="margin: 30px;">
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Enlaces y navegación en
+                HTML: Conecta tu contenido y facilita la exploración
+            </p>
+
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">Los elementos de enlaces y navegación son esenciales
+                para crear una estructura lógica y facilitar la exploración de un sitio web. HTML ofrece diversas
+                etiquetas para definir enlaces internos, externos, de correo electrónico, anclas y menús de navegación.
+            </p> <br>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Enlaces internos (a):</p>
+
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">La etiqueta &lt;a> se utiliza para crear enlaces
+                internos entre diferentes secciones de una misma página web o entre páginas distintas del mismo sitio.
+            </p> <br>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Ejemplo</p>
+            <style>
+                .code-box {
+                    border: 1px solid #ccc;
+                    background-color: #252424;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    overflow-x: auto;
+                    color: #000000;
+                }
+
+                .code-box pre {
+                    margin: 0;
+                }
+
+                .code-box code {
+                    color: #f00e99;
+                }
+            </style>
+            <div class="code-box">
+                <pre><code>&lt;a href="#seccion2">Ir a la Sección 2&lt;/a>
+        </code></pre>
+            </div><br>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Enlaces externos (a):</p>
+
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">La etiqueta &lt;a> se utiliza para crear enlaces
+                externos a páginas web de otros sitios.
+            </p> <br>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Ejemplo</p>
+            <style>
+                .code-box {
+                    border: 1px solid #ccc;
+                    background-color: #252424;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    overflow-x: auto;
+                    color: #000000;
+                }
+
+                .code-box pre {
+                    margin: 0;
+                }
+
+                .code-box code {
+                    color: #f00e99;
+                }
+            </style>
+            <div class="code-box">
+                <pre><code>&lt;a href="https://www.google.com/">Ir a Google&lt;/a>
+        </code></pre>
+            </div><br>
+
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Enlaces de correo
+                electrónico (mailto):</p>
+
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">La etiqueta &lcy;a> se utiliza para crear enlaces
+                que permitan enviar un correo electrónico a una dirección específica.
+            </p> <br>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Ejemplo</p>
+            <style>
+                .code-box {
+                    border: 1px solid #ccc;
+                    background-color: #252424;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    overflow-x: auto;
+                    color: #000000;
+                }
+
+                .code-box pre {
+                    margin: 0;
+                }
+
+                .code-box code {
+                    color: #f00e99;
+                }
+            </style>
+            <div class="code-box">
+                <pre><code>&lt;a href="mailto:correo@ejemplo.com">Enviar correo electrónico&lt;/a>
+        </code></pre>
+            </div><br>
+
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Anclas (id, name)::</p>
+
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">Las anclas permiten crear marcadores dentro de una
+                página web para facilitar la navegación a secciones específicas. Se definen utilizando las etiquetas
+                &lt;id> o &lt;name> y se asocian a enlaces mediante el atributo href.
+            </p> <br>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Ejemplo</p>
+            <style>
+                .code-box {
+                    border: 1px solid #ccc;
+                    background-color: #252424;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    overflow-x: auto;
+                    color: #000000;
+                }
+
+                .code-box pre {
+                    margin: 0;
+                }
+
+                .code-box code {
+                    color: #f00e99;
+                }
+            </style>
+            <div class="code-box">
+                <pre><code>
+        &lt;h2 id="seccion2">Sección 2&lt;/h2>
+        &lt;a href="#seccion2">Ir a la Sección 2&lt;/a>            
+        </code></pre>
+            </div>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Menús de navegación (nav):
+            </p>
+
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">La etiqueta &lt;nav> se utiliza para definir la
+                sección de navegación principal de una página web, que generalmente contiene una lista de enlaces a
+                diferentes secciones del sitio.
+            </p> <br>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Ejemplo</p>
+            <style>
+                .code-box {
+                    border: 1px solid #ccc;
+                    background-color: #252424;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    overflow-x: auto;
+                    color: #000000;
+                }
+
+                .code-box pre {
+                    margin: 0;
+                }
+
+                .code-box code {
+                    color: #f00e99;
+                }
+            </style>
+            <div class="code-box">
+                <pre><code>
+    &lt;nav>
+        &lt;ul>
+            &lt;li>&lt;a href="#">Inicio&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Acerca de&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Contacto&lt;/a>&lt;/li>
+        &lt;/ul>
+    &lt;/nav> </code></pre>
+            </div>
+            <ul class=" space-y-1 list-disc list-inside dark:text-gray-400">
+                <li>
+                    <a href="https://www.w3schools.com/"
+                        class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Enlaces y navegación en HTML.</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/"
+                        class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Enlaces internos en HTML.</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/"
+                        class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Enlaces externos en HTML.</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/"
+                        class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Enlaces de correo electrónico en HTML.</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com//"
+                        class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Anclas en HTML.</a>
+                </li>
+                <li>
+                    <a href="Menús de navegación en HTML"
+                        class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Menús de navegación en HTML.</a>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
