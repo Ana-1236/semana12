@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</head>
+
+<body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-cta" aria-expanded="false">
+                    <!-- <span class="sr-only">Menu</span> -->
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="fundamentos.html"
+                            class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
+                            aria-current="page">Fundamentos de la programación</a>
+                    </li>
+                    <li>
+                        <a href="pensamiento.html"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Desarolla
+                            tu pensamiento lógico</a>
+                    </li>
+                    <li>
+                        <a href="blog.html"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="background-color: rgba(238, 237, 236, 0.849); margin: 10px;">
+        <div style="margin: 30px;">
+    <p style="font-family: 'Times New Roman', Times, serif;"
+        class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Encabezados (&lt;h1 > a &lt;h6 >):</p>
+
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+        class="text-left rtl:text-right dark:text-gray-400">Los encabezados son elementos esenciales para organizar el contenido de una página web y facilitar su lectura. Se definen utilizando etiquetas de apertura y cierre, y se clasifican en seis niveles (h1 es el más importante, h6 el menos importante).
+    </p> <br>
+    <p style="font-family: 'Times New Roman', Times, serif;"
+        class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Ejemplo</p>
+    <style>
+        /* Estilos para el recuadro de código */
+        .code-box {
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            /* Agrega una barra de desplazamiento horizontal si es necesario */
+            color: #333;
+            /* Cambia el color del texto dentro del recuadro */
+        }
+
+        .code-box pre {
+            margin: 0;
+        }
+
+        /* Estilos para las etiquetas dentro del recuadro */
+        .code-box code {
+            color: #007bff;
+            /* Cambia el color de las etiquetas */
+        }
+    </style>
+    <div class="code-box">
+        <pre><code> 
+            &lt;h1>Título principal&lt;/h1>
+            &lt;h2>Título secundario&lt;/h2>
+            &lt;h3>Título terciario&lt;/h3>
+            &lt;h4>Título de cuarto nivel&lt;/h4>
+            &lt;h5>Título de quinto nivel&lt;/h5>
+            &lt;h6>Título de sexto nivel&lt;/h6>
+            
+                </code></pre>
+    </div>
+    <p style="font-family: 'Times New Roman', Times, serif;"
+        class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Párrafos (&lt;p>):</p>
+
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+        class="text-left rtl:text-right dark:text-gray-400">Los párrafos son los bloques de texto que forman el cuerpo principal del contenido de una página web. Se definen utilizando la etiqueta &lt;p>.
+    </p> <br>
+    <p style="font-family: 'Times New Roman', Times, serif;"
+        class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Ejemplo</p>
+    <style>
+        /* Estilos para el recuadro de código */
+        .code-box {
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            /* Agrega una barra de desplazamiento horizontal si es necesario */
+            color: #333;
+            /* Cambia el color del texto dentro del recuadro */
+        }
+
+        .code-box pre {
+            margin: 0;
+        }
+
+        /* Estilos para las etiquetas dentro del recuadro */
+        .code-box code {
+            color: #007bff;
+            /* Cambia el color de las etiquetas */
+        }
+    </style>
+    <div class="code-box">
+        <pre><code> &lt;p>Este es un párrafo de texto. Puedes utilizar esta etiqueta para crear bloques de texto que formen el cuerpo principal del contenido de tu página web.&lt;/p > </code></pre>
+    </div><br>
+    <p style="font-family: 'Times New Roman', Times, serif;"
+        class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Formato de texto (negrita, cursiva, subrayado):</p>
+
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+        class="text-left rtl:text-right dark:text-gray-400">Para aplicar formato de texto a elementos específicos dentro de un párrafo, se utilizan las etiquetas &lt;b> (negrita), &lt;i> (cursiva) y &lt;u> (subrayado).
+
+
+    </p> <br>
+    <p style="font-family: 'Times New Roman', Times, serif;"
+        class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Ejemplo</p>
+    <style>
+        /* Estilos para el recuadro de código */
+        .code-box {
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            /* Agrega una barra de desplazamiento horizontal si es necesario */
+            color: #333;
+            /* Cambia el color del texto dentro del recuadro */
+        }
+
+        .code-box pre {
+            margin: 0;
+        }
+
+        /* Estilos para las etiquetas dentro del recuadro */
+        .code-box code {
+            color: #007bff;
+            /* Cambia el color de las etiquetas */
+        }
+    </style>
+    <div class="code-box">
+        <pre><code><p>Esta frase está en &lt;b>negrita&lt;/b>, &lt;i>cursiva&lt;/i> y &lt;u>subrayada&lt;/u>.</p>
+        </code></pre>
+    </div><br>
+
+    <p style="font-family: 'Times New Roman', Times, serif;"
+        class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Listas (&lt;ul>, &lt;ol>, &lt;li>):</p>
+
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+        class="text-left rtl:text-right dark:text-gray-400">Las listas son una forma organizada de presentar información en una página web. Se definen utilizando las etiquetas &lt;ul> (lista sin orden), &lt;ol> (lista ordenada) y &lt;li> (elemento de la lista).
+
+
+    </p> <br>
+    <p style="font-family: 'Times New Roman', Times, serif;"
+        class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Ejemplo</p>
+    <style>
+        /* Estilos para el recuadro de código */
+        .code-box {
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            /* Agrega una barra de desplazamiento horizontal si es necesario */
+            color: #333;
+            /* Cambia el color del texto dentro del recuadro */
+        }
+
+        .code-box pre {
+            margin: 0;
+        }
+
+        /* Estilos para las etiquetas dentro del recuadro */
+        .code-box code {
+            color: #007bff;
+            /* Cambia el color de las etiquetas */
+        }
+    </style>
+    <div class="code-box">
+        <pre><code>&lt;ul&lt;
+    &lt;li&gt;Elemento 1 de la lista sin orden &lt;/li&gt;
+     &lt;li&gt;Elemento 2 de la lista sin orden&lt;/li&gt;
+     &lt;li&gt;Elemento 3 de la lista sin orden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+     &lt;li&gt;Primer paso&lt;/li&gt;
+     &lt;li&gt;Segundo paso&lt;/li&gt;
+     &lt;li&gt;Tercer paso&lt;/li&gt;
+&lt;/ol&gt;</code></pre><br>
+    
+    </div>
+    <p style="font-family: 'Times New Roman', Times, serif;"
+        class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Bloques de código (pre): </p>
+
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+        class="text-left rtl:text-right dark:text-gray-400">Los bloques de código se utilizan para mostrar fragmentos de código fuente o texto preformateado en una página web. Se definen utilizando la etiqueta &lt;pre>.
+ </p> <br>
+    <p style="font-family: 'Times New Roman', Times, serif;"
+        class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Ejemplo</p>
+    <style>
+        /* Estilos para el recuadro de código */
+        .code-box {
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            /* Agrega una barra de desplazamiento horizontal si es necesario */
+            color: #333;
+            /* Cambia el color del texto dentro del recuadro */
+        }
+
+        .code-box pre {
+            margin: 0;
+        }
+
+        /* Estilos para las etiquetas dentro del recuadro */
+        .code-box code {
+            color: #007bff;
+            /* Cambia el color de las etiquetas */
+        }
+    </style>
+    <div class="code-box">
+        <pre><code>&lt;pre>
+        &lt;h1&gt;Este es un título&lt;/h1&gt;
+        &lt;p&gt;Este es un párrafo de texto.&lt;/p&gt;
+ &lt;/pre></code></pre>
+    </div>
+    <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white"> Recursos adicionales:</h2>
+            <ul class=" space-y-1 list-disc list-inside dark:text-gray-400">
+                <li>
+                    <a href="https://www.w3schools.com/html/html_elements.asp"
+                        class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Elementos de texto y formato en HTML.</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/"
+                        class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Formato de texto en HTML.</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

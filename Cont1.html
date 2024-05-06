@@ -1,11 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </head>
+
 <body>
-    
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-cta" aria-expanded="false">
+                    <!-- <span class="sr-only">Menu</span> -->
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="fundamentos.html"
+                            class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
+                            aria-current="page">Fundamentos de la programación</a>
+                    </li>
+                    <li>
+                        <a href="pensamiento.html"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Desarolla
+                            tu pensamiento lógico</a>
+                    </li>
+                    <li>
+                        <a href="blog.html"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="background-color: rgba(238, 237, 236, 0.849); margin: 10px;">
+        <div style="margin: 30px;">
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-3xl font-semibold  text-gray-900 dark:text-white">Introducción a HTML: Dominando el
+                lenguaje fundamental de la web.</p><br>
+
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">¿Qué es HTML?</p>
+
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">HTML (HyperText Markup Language) es el lenguaje
+                fundamental para crear páginas web. Es un lenguaje de marcado que define la estructura y el contenido de
+                una página web, utilizando etiquetas y atributos que indican cómo debe ser interpretada por los
+                navegadores web.</p> <br>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Estructura básica de un
+                elemento HTML</p>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">Un documento HTML básico tiene la siguiente
+                estructura:</p>
+            <style>
+                /* Estilos para el recuadro de código */
+                .code-box {
+                    border: 1px solid #ccc;
+                    background-color: #f9f9f9;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    overflow-x: auto;
+                    /* Agrega una barra de desplazamiento horizontal si es necesario */
+                    color: #333;
+                    /* Cambia el color del texto dentro del recuadro */
+                }
+
+                .code-box pre {
+                    margin: 0;
+                }
+
+                /* Estilos para las etiquetas dentro del recuadro */
+                .code-box code {
+                    color: #007bff;
+                    /* Cambia el color de las etiquetas */
+                }
+            </style>
+            <div class="code-box">
+                <pre><code> 
+                    &lt;!DOCTYPE html>
+                    &lt;html>
+                    &lt;head>
+            &lt;title>Título de la página&lt;/title>
+              &lt;/head>
+            &lt;body>
+            &lt;/body>
+              &lt;/html>
+            </code></pre>
+            </div>
+            <ul class=" list-disc list-inside dark:text-gray-400">
+                <li> <a href="/" style="font-weight: bold;"> !DOCTYPE html:</a>
+                    Declaración de tipo de documento que indica al navegador que se trata de un documento HTML5.
+                </li>
+                <li> <a href="/" style="font-weight: bold;"> html:</a>
+                    Etiqueta raíz que contiene todo el contenido del documento HTML.
+                </li>
+                <li> <a href="/" style="font-weight: bold;"> head:</a>
+                    Etiqueta que define el título de la página web, que se muestra en la barra de título del navegador.
+                </li>
+                <li> <a href="/" style="font-weight: bold;"> body:</a>
+                    Sección que contiene el contenido visible de la página web, como texto, imágenes, enlaces y otros
+                    elementos.
+                </li>
+            </ul> <br>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Elementos HTML básicos
+
+            </p>
+
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">Los elementos HTML son los componentes básicos que
+                forman el contenido de una página web. Se definen utilizando etiquetas de apertura y cierre, y pueden
+                contener atributos que modifican su comportamiento. Algunos ejemplos de elementos HTML básicos son:
+            </p>
+            <ul class=" list-disc list-inside dark:text-gray-400">
+                <li> <a href="/" style="font-weight: bold;">
+                        &lt;h1> a &lt;h6>:
+                    </a>
+                    Etiqueta para crear un hipervínculo a otra página web o a una sección específica de la misma página.
+                </li>
+                <li> <a href="/" style="font-weight: bold;">
+                        &lt;p>:
+                    </a>
+                    Etiqueta para definir un párrafo de texto.
+                </li>
+                <li> <a href="/" style="font-weight: bold;">
+                        &lt;img>:
+                    </a>
+                    Etiqueta para insertar una imagen en la página.
+                </li>
+                <li> <a href="/" style="font-weight: bold;">
+                        &lt;ul>:
+                    </a>
+                    Etiqueta para crear una lista sin orden.
+                </li>
+                <li> <a href="/" style="font-weight: bold;">
+                        &lt;ol>:
+                    </a>
+                    Etiqueta para crear una lista ordenada.
+                </li>
+                <li> <a href="/" style="font-weight: bold;">
+                        &lt;li>:
+                    </a>
+                    Etiqueta para definir un elemento de una lista.
+                </li>
+                <li> <a href="/" style="font-weight: bold;">
+                        &lt;table> >:
+                    </a>Etiqueta para crear una tabla.
+                </li>
+                <li> <a href="/" style="font-weight: bold;">
+                        &lt;tr>:
+                    </a>
+                    Etiqueta para definir una fila de una tabla.
+                </li>
+                <li> <a href="/" style="font-weight: bold;">
+                        &lt;td>:
+                    </a>
+                    Etiqueta para definir una celda de una tabla.
+                </li>
+            </ul><br>
+
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Atributos HTML
+
+            </p>
+
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">Los atributos HTML se utilizan para modificar el
+                comportamiento o la apariencia de los elementos HTML. Se escriben dentro de la etiqueta de apertura del
+                elemento, y se componen de un nombre y un valor separados por un signo igual. Por ejemplo, para
+                establecer el color del texto de un párrafo en rojo, se utilizaría el siguiente código:
+            </p>
+            <style>
+                /* Estilos para el recuadro de código */
+                .code-box {
+                    border: 1px solid #ccc;
+                    background-color: #f9f9f9;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    overflow-x: auto;
+                    /* Agrega una barra de desplazamiento horizontal si es necesario */
+                    color: #333;
+                    /* Cambia el color del texto dentro del recuadro */
+                }
+
+                .code-box pre {
+                    margin: 0;
+                }
+
+                /* Estilos para las etiquetas dentro del recuadro */
+                .code-box code {
+                    color: #007bff;
+                    /* Cambia el color de las etiquetas */
+                }
+            </style>
+            <div class="code-box">
+                <pre><code> &lt;p style="color: red;">Este texto es rojo&lt;/p ></code></pre>
+            </div><br>
+
+            <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white"> Recursos adicionales:</h2>
+            <ul class=" space-y-1 list-disc list-inside dark:text-gray-400">
+                <li>
+                    <a href="https://www.w3schools.com/html/"
+                        class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Introducción
+                        a HTML.</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/html/html_intro.asp"
+                        class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Estructura
+                        básica de un documento HTML.</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/html/html_elements.asp"
+                        class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Elementos
+                        HTML básicos.</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/html/html_attributes.asp"
+                        class="font-semibold text-gray-900 underline dark:text-white decoration-indigo-500">Atributos
+                        HTML.</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
 </body>
+
 </html>
