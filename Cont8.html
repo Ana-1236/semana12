@@ -54,11 +54,124 @@
     <div style="background-color: rgba(238, 237, 236, 0.849); margin: 10px;">
         <div style="margin: 30px;">
             <p style="font-family: 'Times New Roman', Times, serif;"
-                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Enlaces y navegación en
-                Tablas en HTML: Organiza tu información de forma clara y eficiente
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Semántica HTML: Estructura
+                tu contenido de forma significativa
             </p>
-            
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">La semántica HTML es esencial para crear páginas web que sean comprensibles tanto para los usuarios como para los motores de búsqueda. Los elementos y atributos semánticos proporcionan información sobre el significado del contenido de la página, lo que ayuda a los usuarios a navegar y comprender mejor la información, y a los motores de búsqueda a indexar y clasificar correctamente la página.
+            </p> <br>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+                class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Nuevos elementos semánticos (header, nav, article):
+            </p>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                class="text-left rtl:text-right dark:text-gray-400">HTML5 introdujo nuevos elementos semánticos que definen claramente el tipo de contenido que contienen. Estos elementos ayudan a estructurar mejor el contenido de la página y a mejorar la accesibilidad.
+            </p> <br>
+            <ul class=" space-y-1 list-disc list-inside dark:text-gray-400">
+                <li style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                    class="text-left rtl:text-right dark:text-gray-400">header: Define el encabezado de la página, que generalmente contiene el logotipo, el título de la página y la barra de navegación.
+                </li>
+                <li style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                    class="text-left rtl:text-right dark:text-gray-400">nav: Define la sección de navegación principal de la página, que generalmente contiene enlaces a las diferentes secciones del sitio web.
+                </li>
+                <li style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+                    class="text-left rtl:text-right dark:text-gray-400">article: Define un artículo independiente, como una entrada de blog o un post de noticias.
+                </li>
+            </ul>
+            <style>
+                .code-box {
+                    border: 1px solid #ccc;
+                    background-color: #f9f9f9;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    overflow-x: auto;
+                    color: #333;
+                }
 
+                .code-box pre {
+                    margin: 0;
+                }
+
+                .code-box code {
+                    color: #007bff;
+                }
+            </style>
+            <div class="code-box">
+                <pre><code>&lt;header>
+    &lt;h1>Mi Blog&lt;/h1>
+    &lt;nav>
+        &lt;ul>
+            &lt;li>&lt;a href="#">Inicio&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Acerca de&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Contacto&lt;/a>&lt;/li>
+        &lt;/ul>
+    &lt;/nav>
+&lt;/header>
+                  
+&lt;article>
+    &lt;h2>Título del artículo&lt;/h2>
+    &lt;p>Contenido del artículo...&lt;/p>
+&lt;/article>
+                </code></pre>
+            </div><br>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+            class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Atributos de datos (data-*):
+        </p>
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+            class="text-left rtl:text-right dark:text-gray-400">Los atributos de datos (data-*) permiten almacenar información personalizada en los elementos HTML sin afectar a la estructura o al estilo de la página. Esta información puede ser utilizada por scripts JavaScript o aplicaciones web para obtener datos adicionales sobre el elemento.
+        </p> <br>
+        <style>
+            .code-box {
+                border: 1px solid #ccc;
+                background-color: #f9f9f9;
+                padding: 20px;
+                margin-bottom: 20px;
+                overflow-x: auto;
+                color: #333;
+            }
+
+            .code-box pre {
+                margin: 0;
+            }
+
+            .code-box code {
+                color: #007bff;
+            }
+        </style>
+        <div class="code-box">
+            <pre><code>&lt;div data-id="123" data-nombre="Juan Pérez">
+    &lt;/div>
+          </code></pre>
+        </div><br>
+            <p style="font-family: 'Times New Roman', Times, serif;"
+            class=" text-2xl font-semibold leading-normal text-gray-900 dark:text-white">Microdatos (microdata):
+        </p>
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+            class="text-left rtl:text-right dark:text-gray-400">Los microdatos son una forma de estructurar datos dentro de elementos HTML de una manera que sea comprensible para los motores de búsqueda y otras aplicaciones. Los microdatos utilizan vocabularios predefinidos o personalizados para definir entidades y sus propiedades.
+        </p> <br>
+        <style>
+            .code-box {
+                border: 1px solid #ccc;
+                background-color: #f9f9f9;
+                padding: 20px;
+                margin-bottom: 20px;
+                overflow-x: auto;
+                color: #333;
+            }
+
+            .code-box pre {
+                margin: 0;
+            }
+
+            .code-box code {
+                color: #007bff;
+            }
+        </style>
+        <div class="code-box">
+            <pre><code>&lt;div itemscope itemtype="http://schema.org/Person">
+    &lt;h2 itemprop="name">Juan Pérez&lt;/h2>
+    &lt;p itemprop="email">juan.perez@ejemplo.com&lt;/p>
+&lt;/div></code></pre>
+        </div><br>
 
 
 
@@ -67,4 +180,5 @@
         </div>
     </div>
 </body>
+
 </html>
