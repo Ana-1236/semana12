@@ -1,37 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </head>
+
 <body>
   <nav class="bg-white border-gray-200 dark:bg-gray-900">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-    </a>
-    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button data-collapse-toggle="navbar-cta" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-cta" aria-expanded="false">
           <!-- <span class="sr-only">Menu</span> -->
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
           </svg>
-      </button>
-    </div>
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="Acerca de.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Acerca de</a>        </li>
-        <li>
-          <a href="blog.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
-        </li>
-        <li>
-          <a href="contacto.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contacto</a>
-        </li>
-      </ul>
-    </div>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="Acerca de.html"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Acerca
+              de</a>
+          </li>
+          <li>
+            <a href="blog.html"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+          </li>
+          <li>
+            <a href="contacto.html"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contacto</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
+  <div style="background-color: rgba(238, 237, 236, 0.849); margin: 10px;">
+    <div style="margin: 30px;">
+
+      <p style="font-family: 'Times New Roman', Times, serif;"
+        class=" text-3xl font-semibold  text-gray-900 dark:text-white">Blog de programación.</p><br>
+      <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;"
+        class="text-left rtl:text-right dark:text-gray-400">¡Bienvenido a nuestro blog de programación! Aquí encontrarás
+        artículos, tutoriales y otros recursos para ayudarte a aprender y mejorar tus habilidades de programación.</p>
+      <br>
+
+      <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Artículos Recientes:</h2>
+      <h3  class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Tutoriales:
+      </h3>
+      <ul class="max-w-md space-y-1 text-gray-800 list-disc list-inside dark:text-gray-400">
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Aprende paso a paso: </a>Domina nuevas habilidades de programación y desarrolla proyectos prácticos con guías detalladas y fáciles de seguir.
+        </li>
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Crea aplicaciones web: </a>Descubre cómo construir sitios web dinámicos y funcionales utilizando lenguajes de programación como Python, JavaScript y frameworks populares como Django y React.
+        </li>
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Desarrolla software: </a>Explora la creación de programas informáticos desde cero, aprendiendo sobre algoritmos, estructuras de datos y metodologías de desarrollo.
+        </li>
+      </ul><br>
+      <h3  class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Guías y explicaciones:
+      </h3>
+      <ul class="max-w-md space-y-1 text-gray-800 list-disc list-inside dark:text-gray-400">
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Profundiza en conceptos clave: </a>Clarifica tus dudas y profundiza en temas complejos de programación con explicaciones detalladas y ejemplos prácticos.
+        </li>
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Resuelve problemas comunes: </a>Encuentra soluciones a los desafíos que enfrentan los programadores en su día a día, desde errores de código hasta optimización de rendimiento.
+        </li>
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Mejora tus habilidades: </a> Aprende técnicas y buenas prácticas para escribir código limpio, eficiente y mantenible, elevando el nivel de tus proyectos.
+        </li>
+      </ul><br>
+      <h3  class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Novedades y tendencias:
+      </h3>
+      <ul class="max-w-md space-y-1 text-gray-800 list-disc list-inside dark:text-gray-400">
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Mantente a la vanguardia: </a>Descubre las últimas tecnologías, herramientas y frameworks que están revolucionando el panorama de la programación.
+        </li>
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Explora inteligencia artificial: </a>Adéntrate en el apasionante mundo de la IA, aprendiendo sobre machine learning, deep learning y sus aplicaciones prácticas.
+        </li>
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Prepárate para el futuro: </a> Anticípate a las tendencias emergentes en el desarrollo de software y adquiere las habilidades necesarias para el éxito profesional.
+        </li>
+      </ul><br>
+      <h3  class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Ejemplos de código y proyectos:
+      </h3>
+      <ul class="max-w-md space-y-1 text-gray-800 list-disc list-inside dark:text-gray-400">
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Inspírate con ejemplos reales: </a>Observa código fuente de proyectos exitosos y aprende de las mejores prácticas de programación.
+        </li>
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Desarrolla tus propios proyectos: </a>Pon en práctica tus conocimientos creando tus propios proyectos, desde aplicaciones web hasta juegos y herramientas.
+        </li>
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Aprende de la comunidad: </a> Comparte tus proyectos con otros programadores y recibe retroalimentación valiosa para mejorar tus habilidades.
+        </li>
+      </ul><br>
+      <h3  class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Contenido personal y reflexivo:
+      </h3>
+      <ul class="max-w-md space-y-1 text-gray-800 list-disc list-inside dark:text-gray-400">
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Conoce las experiencias de otros: </a>Descubre las historias y perspectivas de programadores experimentados, aprendiendo de sus éxitos y desafíos.
+        </li>
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Reflexiona sobre la industria: </a>Analiza el impacto de la programación en la sociedad y explora los retos y oportunidades que presenta el futuro.
+        </li>
+        <li>
+          <a href="#" class="font-semibold text-gray-900 dark:text-white">Comparte tu propia historia: </a> Inspira a otros contando tu viaje de aprendizaje como programador y los aprendizajes que has adquirido en el camino.
+        </li>
+      </ul><br>
+
+
+      <a href="index.html"><button type="button"
+          class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Volver</button></a><br>
+    </div>
+  </div>
 </body>
+
 </html>
